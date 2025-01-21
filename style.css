@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9; /* สีพื้นหลังที่สบายตา */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column; /* จัด layout แนวตั้ง */
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(45deg, #6ab7d6, #5f9ea0); /* การไล่เฉดสี */
+    color: white;
+    width: 100%; /* ให้เต็มความกว้างของหน้า */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    font-size: 1.5em;
+    font-weight: bold;
+    position: sticky; /* ทำให้ header ติดอยู่ด้านบนเมื่อ scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Form and Content */
+form, .content {
+    background: white;
+    width: 100%;
+    max-width: 400px; /* จำกัดขนาดความกว้างของฟอร์ม */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* เพิ่มพื้นที่รอบ */
+}
+
+/* Input Group */
+.input-group {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1); /* เพิ่มความลึก */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่มเอฟเฟกต์ */
+}
+
+.input-group input:focus {
+    border-color: #5f9ea0;
+    box-shadow: 0 0 5px rgba(95, 158, 160, 0.5); /* เงาสีเขียวอ่อน */
+    outline: none;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    background: #5f9ea0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; /* เพิ่มเอฟเฟกต์ hover */
+}
+
+.btn:hover {
+    background-color: #538d8a; /* เปลี่ยนสีเมื่อ hover */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อยเมื่อ hover */
+}
+
+.btn:active {
+    transform: translateY(0); /* ลดลงเมื่อกด */
+}
+
+/* Error Message */
+.error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Success Message */
+.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* ทำให้รูปภาพโลโก้ย่อขยายตามขนาดหน้าจอ */
+.logo {
+    max-width: 100%;  /* รูปภาพจะไม่เกินขนาดความกว้างของ container */
+    height: 100px;     /* คงอัตราส่วนของรูปภาพ */
+    width: auto;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+/* ปรับตำแหน่งและขนาดของ Navbar */
+/* Navbar Styles */
+
+.navbar {
+    position: sticky; /* ทำให้ navbar ติดอยู่ที่ขอบบน */
+    top: 0; /* ตำแหน่งที่ต้องการให้ navbar ติดอยู่ที่ขอบบน */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333; /* กำหนดสีพื้นหลังของ navbar */
+    z-index: 1000; /* ให้ navbar อยู่บนสุดเมื่อเลื่อนหน้า */
+    width: 100%;
+}
+
+/* Navbar Brand (logo หรือชื่อแบรนด์) */
+.navbar-brand p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar Toggler (สำหรับมือถือหรือขนาดเล็ก) */
+.navbar-toggler {
+    display: inline-block;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+
+/*  */
+
+
+/* Home Content */
+
+
+.container {
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางในแนวนอน */
+    align-items: center; /* จัดกึ่งกลางในแนวตั้ง */
+}
+
+
+.homecontent {
+
+    border: 1px solid #b0d4e3; /* ขอบสีฟ้าอ่อน */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    text-align: center;
+    opacity: 1; /* ค่าเริ่มต้นให้มองเห็น */
+    transition: opacity 1s ease-out; /* การเปลี่ยนแปลงความโปร่งใส */
+    width: 100%; /* ยืดเต็มพื้นที่แม่ */
+    max-width: 1200px; /* ขนาดสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    padding: 10px;
+    background-color: white;
+}
+
+.homecontent.hidden {
+    opacity: 0; /* เมื่อซ่อนจะทำให้โปร่งแสง */
+}
+
+/* Success Message */
+.success {
+    background-color: #d1e7dd; /* สีเขียวอ่อน */
+    color: #0f5132; /* สีข้อความเขียวเข้ม */
+    border: 1px solid #badbcc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success h3 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Welcome Text */
+.homecontent p {
+    font-size: 30px;
+    color: #333;
+}
+
+.homecontent p strong {
+    color: #0077b6;
+}
+
+
+
+/* Container */
+.container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* แถวอัตโนมัติ */
+    flex-direction: column; /* จัดกล่องในแนวตั้ง */
+    align-items: center;
+    gap: 20px; /* ระยะห่างระหว่างกล่อง */
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Transparent Box */
+.transparent-box {
+    background: rgba(255, 255, 255, 0.8); /* โปร่งใส 80% */
+    width: 700px; /* ขนาดความกว้าง */
+    padding: 20px 30px;
+    border-radius: 15px; /* ขอบมน */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    text-decoration: none; /* ลบเส้นใต้ของลิงค์ */
+    color: #333; /* สีข้อความ */
+    font-size: 18px;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอพื้นหลัง */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* เอฟเฟกต์ hover */
+}
+
+/* Hover Effect */
+.transparent-box:hover {
+    transform: scale(1.05); /* ขยายเมื่อ hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อ hover */
+    background: rgba(255, 255, 255, 0.9); /* เพิ่มความชัดเมื่อ hover */
+    color: #0056b3; /* เปลี่ยนสีข้อความเมื่อ hover */
+}
+
+/* Active State */
+.transparent-box:active {
+    transform: scale(0.98); /* ลดขนาดเล็กลงเมื่อคลิก */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* ลดเงา */
+}
+
+/* สไตล์ของ navbar */
+.collapse.navbar-collapse {
+    display: flex; /* ใช้ flexbox จัดเรียง */
+    justify-content: flex-end; /* จัดให้เนื้อหาอยู่ด้านขวา */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    padding: 10px 20px; /* เพิ่มพื้นที่ภายใน */
+    border-radius: 8px; /* ขอบมน */
+   
+}
+
+/* สไตล์รายการ ul */
+.navbar-nav {
+    display: flex;
+    list-style: none; /* เอา bullet ออก */
+    margin: 0;
+    padding: 0;
+}
+
+/* สไตล์รายการ li */
+.navbar-nav .nav-item {
+    margin-left: 15px; /* เพิ่มระยะห่างระหว่างไอเท็ม */
+   
+}
+
+/* สไตล์ลิงก์ Home */
+.home {
+    margin-right:10px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #2980b9; /* สีพื้นหลัง */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    padding: 8px 22px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+/* Hover และ Active */
+.home:hover {
+    background-color: #1e6a8c; /* สีเมื่อ hover */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อย */
+}
+
+.home:active {
+    background-color: #145374; /* สีเมื่อคลิก */
+}
+
+/* สไตล์ปุ่ม Logout */
+.logout {
+    
+    display: inline-block;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+/* Hover และ Active */
+.logout:hover {
+    background-color: #c9302c; /* สีเมื่อ hover */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อย */
+}
+
+.logout:active {
+    background-color: #a5271c; /* สีเมื่อคลิก */
+}
+
