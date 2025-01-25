@@ -3,22 +3,29 @@
     padding: 0;
 }
 
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 16px;
     background-color: #f9f9f9; /* สีพื้นหลังที่สบายตา */
     line-height: 1.6;
     display: flex;
     flex-direction: column; /* จัด layout แนวตั้ง */
     min-height: 100vh;
+    height: 100vh;
 }
 
 /* Header */
 .header {
     background: linear-gradient(45deg, #6ab7d6, #5f9ea0); /* การไล่เฉดสี */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: white;
-    width: 100%; /* ให้เต็มความกว้างของหน้า */
+    width: 1920px; /* ให้เต็มความกว้างของหน้า */
+    max-width: 100%; /* จำกัดขนาดความกว้างของฟอร์ม */
     text-align: center;
     padding: 20px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
@@ -26,7 +33,7 @@ body {
     font-weight: bold;
     position: sticky; /* ทำให้ header ติดอยู่ด้านบนเมื่อ scroll */
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 /* Form and Content */
@@ -45,6 +52,7 @@ form, .content {
 .input-group {
     margin: 10px;
     margin-bottom: 15px;
+    
 }
 
 .input-group label {
@@ -115,15 +123,72 @@ form, .content {
     text-align: left;
     margin-bottom: 15px;
 }
+/* Home Content */
+
+
+.container {
+    width: 100%;
+   max-width: 400px;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
+
+
+.homecontent {
+
+   border: 1px solid #b0d4e3; /* ขอบสีฟ้าอ่อน */
+   border-radius: 10px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+   text-align: center;
+   opacity: 1; /* ค่าเริ่มต้นให้มองเห็น */
+   transition: opacity 1s ease-out; /* การเปลี่ยนแปลงความโปร่งใส */
+   width: 100%; /* ยืดเต็มพื้นที่แม่ */
+   max-width: 1200px; /* ขนาดสูงสุด */
+   margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+   padding: 10px;
+   background-color: white;
+}
+
+.homecontent.hidden {
+   opacity: 0; /* เมื่อซ่อนจะทำให้โปร่งแสง */
+}
+
+/* Success Message */
+.success {
+   background-color: #d1e7dd; /* สีเขียวอ่อน */
+   color: #0f5132; /* สีข้อความเขียวเข้ม */
+   border: 1px solid #badbcc;
+   padding: 10px 15px;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   font-size: 16px;
+   font-weight: bold;
+   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success h3 {
+   margin: 0;
+   text-align: center;
+}
+
+/* Welcome Text */
+.homecontent p {
+   font-size: 30px;
+   color: #333;
+}
+
+.homecontent p strong {
+   color: #0077b6;
+}
 
 /* ทำให้รูปภาพโลโก้ย่อขยายตามขนาดหน้าจอ */
 .logo {
     max-width: 100%;  /* รูปภาพจะไม่เกินขนาดความกว้างของ container */
-    height: 100px;     /* คงอัตราส่วนของรูปภาพ */
-    width: auto;
-    margin: auto;
-    margin-right: 10px;
-    margin-left: 2px;
+    height: 50px;     /* คงอัตราส่วนของรูปภาพ */
+
 }
 /* ปรับตำแหน่งและขนาดของ Navbar */
 /* Navbar Styles */
@@ -140,6 +205,12 @@ form, .content {
     width: 100%;
 }
 
+
+.container-fluid{
+    width: 100%;
+    
+}
+
 /* Navbar Brand (logo หรือชื่อแบรนด์) */
 .navbar-brand p {
     list-style: none;
@@ -148,6 +219,7 @@ form, .content {
     font-size: 40px;
     color: #fff;
     text-align: center;
+    justify-content: center;
 }
 
 /* Navbar Toggler (สำหรับมือถือหรือขนาดเล็ก) */
@@ -168,9 +240,13 @@ form, .content {
 
 
 .container {
-    display: flex;
-    justify-content: center; /* จัดกึ่งกลางในแนวนอน */
-    align-items: center; /* จัดกึ่งกลางในแนวตั้ง */
+     width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 
@@ -223,45 +299,59 @@ form, .content {
 
 
 
-/* Container */
-.container {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* แถวอัตโนมัติ */
-    flex-direction: column; /* จัดกล่องในแนวตั้ง */
-    align-items: center;
+
+
+/* ทำให้ .box แสดงแบบกริด มีช่องว่างระหว่างกล่อง */
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์ */
     gap: 20px; /* ระยะห่างระหว่างกล่อง */
     padding: 20px;
-    max-width: 1200px;
-    width: 100%;
 }
 
-/* Transparent Box */
+/* การตกแต่งลิงค์ */
 .transparent-box {
-    background: rgba(255, 255, 255, 0.8); /* โปร่งใส 80% */
-    width: 700px; /* ขนาดความกว้าง */
-    padding: 20px 30px;
-    border-radius: 15px; /* ขอบมน */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-    text-decoration: none; /* ลบเส้นใต้ของลิงค์ */
-    color: #333; /* สีข้อความ */
-    font-size: 18px;
-    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-    backdrop-filter: blur(10px); /* เอฟเฟกต์เบลอพื้นหลัง */
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* เอฟเฟกต์ hover */
+    background-color: #f8f9fa; /* พื้นหลังสีอ่อน */
+    border-radius: 10px; /* ขอบมน */
+    padding: 20px;
+    text-decoration: none;
+    color: #333; /* สีตัวอักษร */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเบา */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟ็กต์การเคลื่อนไหว */
 }
 
-/* Hover Effect */
+/* การตกแต่ง <h2> */
+.transparent-box h2 {
+    font-size: 1.5em;
+    color: #007bff; /* สีของหัวข้อ */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* การตกแต่ง <p> */
+.transparent-box p {
+    font-size: 1em;
+    color: #555; /* สีตัวอักษร */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* เอฟเฟ็กต์เมื่อโฮเวอร์ (hover) */
 .transparent-box:hover {
-    transform: scale(1.05); /* ขยายเมื่อ hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อ hover */
-    background: rgba(255, 255, 255, 0.9); /* เพิ่มความชัดเมื่อ hover */
-    color: #0056b3; /* เปลี่ยนสีข้อความเมื่อ hover */
+    transform: translateY(-5px); /* เลื่อนขึ้นเล็กน้อย */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาที่มีความเข้มขึ้น */
 }
 
-/* Active State */
-.transparent-box:active {
-    transform: scale(0.98); /* ลดขนาดเล็กลงเมื่อคลิก */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* ลดเงา */
+/* เอฟเฟ็กต์เมื่อโฮเวอร์ใน <h2> */
+.transparent-box:hover h2 {
+    color: #0056b3; /* เปลี่ยนสีหัวข้อเมื่อ hover */
+}
+
+/* ใช้กริดแบบเดียวกันในหน้าจอขนาดเล็ก (เช่นมือถือ) */
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr; /* แสดงคอลัมน์เดียว */
+    }
 }
 
 /* สไตล์ของ navbar */
@@ -342,3 +432,137 @@ form, .content {
     background-color: #a5271c; /* สีเมื่อคลิก */
 }
 
+
+.adv {
+    display: flex; /* ใช้ flexbox */
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    font-family: 'Arial', sans-serif;
+    color: #ff0000;
+    
+    text-align: center;
+    
+}
+
+.adv-info {
+        text-align: center; /* ให้อักษรอยู่กลาง */
+        padding: 20px;
+        background-color: #ffffff; /* สีพื้นหลังของกล่อง */
+    }
+
+
+.adv h1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .adv {
+        width: 90%;         /* ลดความกว้างของกล่องให้เหมาะสม */
+        padding: 20px;
+    }
+}
+
+/* ตั้งค่า body ให้รองรับการจัด layout */
+body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: flex-start; /* ให้เนื้อหาเริ่มต้นจากด้านซ้าย */
+    align-items: flex-start; /* จัดตำแหน่งเนื้อหาให้อยู่ด้านบน */
+    min-height: 100vh; /* ความสูงของหน้าจอ */
+}
+
+/* การตั้งค่าสำหรับ main */
+.room {
+    display: flex; /* ใช้ flexbox */
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: row; /* เปลี่ยนเป็นแถวเดียวกัน */
+    align-items: flex-start; /* ชิดด้านบน */
+  
+    gap: 15px; /* ระยะห่างระหว่างกล่อง */
+    flex-wrap: wrap; /* ให้กล่องเริ่มมาเรียงใหม่หากพื้นที่ไม่พอ */
+}
+
+.room-box h2 {
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* ให้อักษรอยู่กลาง */
+
+
+
+}
+
+/* สไตล์สำหรับ room-box */
+.room-box {
+    
+    margin: 10px;
+    background-color: #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* กำหนดความกว้างของกล่อง */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.room-box:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* สไตล์สำหรับลิงก์ */
+.room-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        justify-content: center; /* เมื่อหน้าจอเล็กลงให้เนื้อหาอยู่กลาง */
+    }
+
+    .room-box {
+        width: 90%; /* ขยายความกว้างของกล่อง */
+    }
+}
+
+
+
+.navbar bg-body-tertiary{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container-fluid{
+    color: #0077b6;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 1920px; /* ให้เต็มความกว้างของหน้า */
+    max-width: 100%; /* จำกัดขนาดความกว้างของฟอร์ม */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    font-size: 1.5em;
+    font-weight: bold;
+    position: sticky; /* ทำให้ header ติดอยู่ด้านบนเมื่อ scroll */
+    top: 0;
+    z-index: 1000; 
+    background-color: #2980b9;
+}
