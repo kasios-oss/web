@@ -29,15 +29,17 @@
 <body>
     
 <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(2, 84, 171);">
-    <div class="container-fluid">
+    <div class="container-fluid"style="background-color: rgb(2, 84, 171);" >
       
         
 
         <!-- Logo -->
-        <img src="LOGOimg.png" alt="Logo" class="logo">
+        <a href="#">
+    <img src="LOGOimg.png" alt="Logo" class="logo">
+</a>
 
         <!-- Navbar Brand (ข้อความ "Welcome To Smart Home") -->
-        <a class="navbar-brand">
+        <a class="navbar-brand" >
             <p class="h2">Welcome To Smart Home</p>
         </a>
 
@@ -49,8 +51,9 @@
         <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        
+                        <a class="home" href="notifications.php" class=>about me</a>
                         <a class="logout" href="index.php?logout='1'">Logout</a>
+                        
             </ul>
         </div>
     </div>
@@ -87,47 +90,16 @@
     </script>
         <!-- logged in user information -->
 
-    <div class="box">
-        <a href="dashboard.php" class="transparent-box"><h2>Box 1: Click to visit Page 1</h2>
+    <div class="boxa">
+        <a href="dashboard.php" class="transparent-box"><h2>Project PKVC Home</h2>
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
                 </a>
-        <a href="page2.html" class="transparent-box"><h2>Box 2: Click to visit Page 2</h2>
+        <a href="page2.html" class="transparent-box"><h2>.....</h2>
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
                 </a>
-        <a href="page3.html" class="transparent-box"><h2>Box 3: Click to visit Page 3</h2> 
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page4.html" class="transparent-box"><h2>Box 4: Click to visit Page 4</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page5.html" class="transparent-box"><h2>Box 5: Click to visit Page 5 </h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page6.html" class="transparent-box"><h2>Box 6: Click to visit Page 6 </h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page7.html" class="transparent-box"><h2>Box 7: Click to visit Page 7 </h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page8.html" class="transparent-box"><h2>Box 8: Click to visit Page 8</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page9.html" class="transparent-box"><h2>Box 9: Click to visit Page 9 </h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page10.html" class="transparent-box"><h2>Box 10: Click to visit Page 10</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
+       
     </div>
 
     

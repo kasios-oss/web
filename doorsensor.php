@@ -1,29 +1,13 @@
-<?php 
-    session_start();
-
-    
-
-    if (!isset($_SESSION['username'])) {
-        $_SESSION['msg'] = "You must log in first";
-        header('location: login.php');
-    }
-
-    if (isset($_GET['logout'])) {
-        session_destroy();
-        unset($_SESSION['username']);
-        header('location: login.php');
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchenroomboard</title>
+    <title>Dashboard</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -39,15 +23,14 @@
         <!-- Navbar Brand (ข้อความ "Welcome To Smart Home") -->
          
         <a class="navbar-brand">
-            <p class="h2">KITCHEN ROOM</p>
+            <p class="h2">Dashboard PKVC</p>
         </a>
 
         <!-- Toggle button for mobile view -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar Links -->
+       <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <a class="home" href="Dashboard.php" class=>Dashboard</a>
@@ -58,23 +41,24 @@
     </div>
 </nav>
 
-    <div class="box">
-        <a href="doorsensor.php" class="transparent-box"><h1>Door Sensor</h1>
 
-        <a href="motionsensor.php" class="transparent-box"><h1>Motion sensor</h1>
+<div class="card d-flex flex-row align-items-center shadow-lg rounded overflow-hidden" style="width: 150%; max-width: 77%; padding: 10; margin:10%;">
+    <img src="sa.png" class="card-img-left rounded" alt="Card Image" style="width: 19%; height: 75%; margin:10%; padding:20px; ">
+    <div class="card-body">
+        <h1 class="card-title">Door Sensor</h1>
+        <h3>Status</h3>
+        <p class="card-text text-muted">
+            สถานะการเชื่อมต่อ (Connectivity) Online/Offline</p>
+        <p class="card-text text-muted">
+        สถานะของแบตเตอรี่ (หากเซ็นเซอร์เป็นแบบไร้สาย) Battery Level แสดงเปอร์เซ็นต์แบตเตอรี่ เช่น 80%
+        </p>
+        <h3>การแจ้งเตือน (Notifications)</h3>
+        <p class="card-text text-muted">
+        เวลาล่าสุดที่สถานะของเซ็นเซอร์เปลี่ยน เช่น "ประตูถูกเปิดเมื่อ 10:30 น."</p>
+        <button type="button" class="btn btn-success" style="margin: 5px;">Open</button>
+        <button type="button" class="btn btn-danger" style="margin: 5px;">Close</button>
 
-        <a href="camera.php" class="transparent-box"><h1>Camera</h1> 
-                
-        <a href="page4.html" class="transparent-box"><h2>Box 4: Click to visit Page 4</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-       
-      
-       
-        
     </div>
+</div>
+</div>
 
-
-</body>
-</html>

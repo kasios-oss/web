@@ -30,8 +30,8 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(9, 102, 201);">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-dark"style="background-color: rgb(2, 84, 171);"">
+    <div class="container-fluid" style="background-color: rgb(2, 84, 171);">
         <!-- Logo -->
        
         <img src="LOGOimg.png" alt="Logo" class="logo">
@@ -83,18 +83,12 @@
     </main>
 
     <div class="box">
-        <a href="dashboard.php" class="transparent-box"><h2>Box 1: Click to visit Page 1</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page2.html" class="transparent-box"><h2>Box 2: Click to visit Page 2</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
-        <a href="page3.html" class="transparent-box"><h2>Box 3: Click to visit Page 3</h2> 
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>
-                </a>
+        <a href="doorsensor.php" class="transparent-box"><h1>Door Sensor</h1>
+
+        <a href="motionsensor.php" class="transparent-box"><h1>Motion sensor</h1>
+
+        <a href="camera.php" class="transparent-box"><h1>Camera</h1> 
+                
         <a href="page4.html" class="transparent-box"><h2>Box 4: Click to visit Page 4</h2>
                 <hr>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas ea vel libero, officiis dolorum laborum quidem aut itaque neque eos modi fugit odit ratione deserunt? Ipsam debitis dolores in dolore quis repellat facilis ad porro aut nihil, quod praesentium odit ab nostrum iste illum dignissimos, rerum fugiat officia facere.</p>

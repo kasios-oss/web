@@ -49,8 +49,36 @@
             <label for="password_2">Confirm Password</label>
             <input type="password" name="password_2">
         </div>
+        
         <div class="input-group">
+            
             <button type="submit" name="reg_user" class="btn">Register</button>
+                <style>   
+                    .btn {
+                            width: 91%;
+                            background: #5f9ea0;
+                            color: white;
+                            padding: 14px 15px;
+                            border: none;
+                            
+                            font-size: 16px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            text-align: center;
+                            transition: background-color 0.3s, transform 0.2s; /* เพิ่มเอฟเฟกต์ hover */
+                        }
+
+                    .btn:hover {
+                            background-color: #538d8a; /* เปลี่ยนสีเมื่อ hover */
+                            transform: translateY(-2px); /* ยกขึ้นเล็กน้อยเมื่อ hover */
+                        }
+
+                    .btn:active {
+                            transform: translateY(0); /* ลดลงเมื่อกด */
+                        }
+
+                </style>
+
         </div>
         <p>Already a member? <a href="login.php">Sign in</a></p>
     </form>

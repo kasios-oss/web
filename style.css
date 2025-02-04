@@ -48,6 +48,7 @@ form, .content {
     margin: 20px auto; /* เพิ่มพื้นที่รอบ */
 }
 
+
 /* Input Group */
 .input-group {
     margin: 10px;
@@ -55,6 +56,7 @@ form, .content {
     
 }
 
+/* Input Group */
 .input-group label {
     display: block;
     font-weight: bold;
@@ -62,14 +64,16 @@ form, .content {
     margin-bottom: 5px;
 }
 
+
 .input-group input {
-    width: 90%;
+    width: 91%;
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1); /* เพิ่มความลึก */
     transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่มเอฟเฟกต์ */
+    
 }
 
 .input-group input:focus {
@@ -83,7 +87,7 @@ form, .content {
     width: 100%;
     background: #5f9ea0;
     color: white;
-    padding: 10px 15px;
+    padding: 14px 15px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -123,6 +127,10 @@ form, .content {
     text-align: left;
     margin-bottom: 15px;
 }
+
+
+
+
 /* Home Content */
 
 
@@ -304,13 +312,20 @@ form, .content {
 /* ทำให้ .box แสดงแบบกริด มีช่องว่างระหว่างกล่อง */
 .box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์ */
+    grid-template-columns: repeat(3, 1fr); /* แสดง 2 คอลัมน์ */
+    gap: 20px; /* ระยะห่างระหว่างกล่อง */
+    padding: 20px;
+}
+
+.boxa {
+    display: grid;
     gap: 20px; /* ระยะห่างระหว่างกล่อง */
     padding: 20px;
 }
 
 /* การตกแต่งลิงค์ */
 .transparent-box {
+    flex-direction: column;
     background-color: #f8f9fa; /* พื้นหลังสีอ่อน */
     border-radius: 10px; /* ขอบมน */
     padding: 20px;
@@ -326,7 +341,24 @@ form, .content {
     color: #007bff; /* สีของหัวข้อ */
     margin-bottom: 10px;
     transition: color 0.3s ease;
+    text-align: center;
 }
+
+.transparent-box h1 {
+    margin: auto;
+    display: flex;
+    font-size: 40px;
+    color: #007bff; /* สีของหัวข้อ */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
 
 /* การตกแต่ง <p> */
 .transparent-box p {
@@ -566,3 +598,6 @@ body {
     z-index: 1000; 
     background-color: #2980b9;
 }
+
+
+
